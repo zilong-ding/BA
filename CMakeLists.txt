@@ -7,6 +7,8 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)			        # 设置�
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/lib)			        # 设置库文件的输出目录
 
 find_package(Eigen3 REQUIRED)
+Find_Package(Sophus REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 add_subdirectory(${PROJECT_SOURCE_DIR}/bal)
 add_subdirectory(${PROJECT_SOURCE_DIR}/ceres)
+add_subdirectory(${PROJECT_SOURCE_DIR}/g2o)
